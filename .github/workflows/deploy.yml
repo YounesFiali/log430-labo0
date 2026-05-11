@@ -11,12 +11,12 @@ jobs:
     steps:
       - name: Pull latest code
         run: |
-          cd /root/log430-labo0
+          cd /home/runner/log430-labo0
           git pull
 
       - name: Restart container
         run: |
-          cd /root/log430-labo0
+          cd /home/runner/log430-labo0
           dockerd &
           sleep 2
           docker compose down
