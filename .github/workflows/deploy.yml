@@ -17,7 +17,5 @@ jobs:
       - name: Restart container
         run: |
           cd /home/runner/log430-labo0
-          dockerd &
-          sleep 2
           docker compose down
           docker compose up -d
